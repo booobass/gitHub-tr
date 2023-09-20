@@ -2,18 +2,28 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=   , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo app</title>
-    <scriot src="app.js" defer></scriot>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div>
-        <input type="text" id="input" />
-        <button id="addTodo">タスクを追加</button>
+        <input id="val1" type="number" value="0"> + <input id="val2" type="number" value="0"> = <span id="answer">0</span>
     </div>
-    <div>
-        <ul id="todoList"></ul>
+    <div id="todo-container">
+        <input type="text" id="create-input" name="" />
+        <button id="create-btn">追加</button>
+        <ul id="todo-List">
+
+        </ul>
     </div>
-    
+    <template id="todo-item-tmpl">
+        <li class="todo-item">
+            <span class="todo-title"></span>
+            <input type="button" class="delete-btn" value="削除">
+            <input type="button" class="complete-btn" value="完了">
+        </li>
+    </template>
 </body>
 </html>

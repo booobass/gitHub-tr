@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.completed > span {
+    text-decoration: line-through;
+    background-color: gray;
+}
